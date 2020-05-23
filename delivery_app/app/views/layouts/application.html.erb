@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <%=link_to("FoodApp", "/")%>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%=link_to("FoodAppとは", "/about")%>
+        </li>
+        <li>
+          <%=link_to("お店一覧", "/index")%>
+        </li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>
